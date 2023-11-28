@@ -28,7 +28,7 @@ class Task:
         delta_in_minutes = delta.total_seconds() / 60
         if delta_in_minutes < 0:
             return 0
-        else:    
+        else:
             return ceil(delta_in_minutes / (24 * 60))  # 分を日数に変換
 
     def statusChange(self, taskStatus):
