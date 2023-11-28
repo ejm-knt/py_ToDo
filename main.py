@@ -64,6 +64,8 @@ while True:
             else:
                 break
 
+        for task in pm.projects[pjName]:
+            print(task)
         num = int(input("何番目のタスク？ >>"))
         status = input("変更するステータス >>")
         pm.projects[pjName][num].statusChange(status)

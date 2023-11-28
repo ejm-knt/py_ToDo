@@ -36,5 +36,6 @@ class ProjectManager:
     # プロジェクトとそのタスクを表示する
     def display_projects(self):
         for project, tasks in self.projects.items():
-            print(f"{project}: {tasks}")
+            print(f"{project}: {tasks}", end="")
+        print("")
 
